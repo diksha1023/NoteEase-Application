@@ -1,0 +1,70 @@
+/* Custom Navbar container */
+.custom-navbar {
+    background-color: #1e3a56; /* New navbar color */
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navbar content layout */
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo styling */
+.navbar-logo {
+    color: #ecf0f1;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+    color: #bdc3c7;
+}
+
+/* Centered quote styling */
+.navbar-quote {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ecf0f1;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Login button styling */
+.navbar-action {
+    margin-right: 50px;
+}
+
+.navbar-button {
+    background-color: #e67e22;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar-button:hover {
+    background-color: #d35400;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .navbar-quote {
+        display: none;
+    }
+}

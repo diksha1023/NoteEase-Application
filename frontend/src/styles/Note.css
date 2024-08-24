@@ -1,0 +1,60 @@
+.note-container {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: calc(33.33% - 20px);
+  display: inline-block;
+  vertical-align: top;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.note-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.note-title {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.note-content {
+  color: #607d8b;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.note-date {
+  color: #021e30;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.delete-button {
+  background-color: #f44336; /* Bright red */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button:hover {
+  background-color: #d32f2f; /* Darker red */
+  transform: scale(1.05);
+}
+
+.notes-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 20px;
+}
